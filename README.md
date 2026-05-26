@@ -8,7 +8,8 @@ This project focuses on building an integrated system to manage, standardize, an
 ## 📊 Data Modeling
 The data architecture is designed according to enterprise Data Warehouse standards using a **Star Schema** to optimize query performance and streamline DAX calculations within Power BI.
 
-*Detailed entity relationships and mapping configurations can be referenced directly in the asset file: `Data model.png`.*
+*Detailed entity relationships and mapping configurations can be referenced directly in the asset file:
+![Data model](data_model.png)
 
 ### 1. Centralized Fact Tables
 To prevent data inflation and replication errors (the Fan-out effect), the business logic separates core transactional metrics into dedicated Fact tables:
@@ -43,9 +44,10 @@ The interactive `Monthly Report.pbix` dashboard delivers a top-down executive vi
 3.  **Data Modeling**: Established relational star-schema mapping configurations (1-to-Many relationships) between dimensions and multiple business fact tables inside the Power BI engine.
 4.  **Calculated Measures (DAX)**: Programmed custom advanced metrics to evaluate green energy transition metrics, recycling volume performance, and time-intelligent rolling safety aggregations.
 5.  **Data Visualization UI/UX**: Crafted modern, user-centric report interfaces featuring coordinated global filtering sliders (Slicers) for streamlined navigation across Groups, BUs, and custom time periods.
-
----
-
+![Overview Page](Images/Overview_Page.png)
+![Emission Page](Images/Emission_Page.png)
+![Energy Page](Images/Energy_Page.png)
+![OHS Page](Images/OHS_Page.png)
 ## 💡 System Roadmap & Future Recommendations
 * **Data Flow Automation**: Transition from historical manual file-based CSV uploads to fully automated Data Pipelines utilizing **Microsoft Fabric** or **Azure Data Factory** to ingest transactional logs straight into a central Lakehouse/Warehouse platform in near real-time.
 * **Data Versioning & Audit Control**: Append rigorous system metadata (including execution timestamps and data steward signatures) to core source pipelines to maintain data pedigree, lineage tracing, and corporate audit readiness.
