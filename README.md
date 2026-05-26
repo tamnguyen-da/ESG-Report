@@ -8,8 +8,8 @@ This project focuses on building an integrated system to manage, standardize, an
 ## 📊 Data Modeling
 The data architecture is designed according to enterprise Data Warehouse standards using a **Star Schema** to optimize query performance and streamline DAX calculations within Power BI.
 
-*Detailed entity relationships and mapping configurations can be referenced directly in the asset file:
-![Data model](data_model.png)
+* *Detailed entity relationships and mapping configurations:*
+![Data model](Images/data_model.png)
 
 ### 1. Centralized Fact Tables
 To prevent data inflation and replication errors (the Fan-out effect), the business logic separates core transactional metrics into dedicated Fact tables:
